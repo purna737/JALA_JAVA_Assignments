@@ -1,0 +1,2 @@
+Hello Purna
+This text is written using FileWriter.

@@ -1,0 +1,28 @@
+package com.jala.arrays;
+
+public class Q11_CommonValuesBetweenArrays {
+
+    static void findCommonValues(int[] arr1, int[] arr2) {
+
+        System.out.println("Common values:");
+
+        for (int i = 0; i < arr1.length; i++) {
+
+            for (int j = 0; j < arr2.length; j++) {
+
+                if (arr1[i] == arr2[j]) {
+                    System.out.println(arr1[i]);
+                    break;
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr1 = {10, 20, 30, 40, 50};
+        int[] arr2 = {30, 40, 60, 70, 80};
+
+        findCommonValues(arr1, arr2);
+    }
+}
